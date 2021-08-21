@@ -1,0 +1,229 @@
+package FTC.Training.Software;
+
+import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
+import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+import com.qualcomm.robotcore.hardware.HardwareMap;
+
+@Autonomous( name = "StevenC11697")
+
+public class MainActivity extends LinearOpMode
+{
+        
+    private DcMotor motorLeft;
+    private DcMotor motorRight;
+    @Override
+
+    public void runOpMode()
+    {
+
+        motorLeft = hardwareMap.dcMotor.get("motorLeft");
+        motorRight = hardwareMap.dcMotor.get("motorRight");
+
+        motorLeft.setDirection(DcMotor.Direction.REVERSE);
+
+        waitForStart();
+        //Means wait until the Driver Control has the play button hit as true
+
+
+        /*
+        Remember, the both paths are done with stationary "motorRight"s while only the "motorLeft"'s
+        move  (Clockwise is 1 and Counter-Clockwise is -1). Try to Check for differences.
+         */
+
+        motorLeft.setPower(1);
+        motorRight.setPower(0);
+
+        sleep(5000);
+
+        motorLeft.setPower(1);
+        motorRight.setPower(1);
+
+        sleep(500);
+
+        motorLeft.setPower(0);
+        motorRight.setPower(1);
+
+        sleep(5000);
+
+        motorLeft.setPower(1);
+        motorRight.setPower(1);
+
+        sleep(1000);
+
+        motorLeft.setPower(0);
+        motorRight.setPower(0);
+
+        sleep(3000);
+
+        //Square Clockwise
+
+        motorLeft.setPower(1);
+        motorRight.setPower(1);
+//2
+        sleep(1000);
+
+        motorLeft.setPower(1);
+        motorRight.setPower(0);
+
+        sleep(1000);
+
+        motorLeft.setPower(1);
+        motorRight.setPower(1);
+//3
+        sleep(1000);
+
+        motorLeft.setPower(1);
+        motorRight.setPower(0);
+
+        sleep(1000);
+
+        motorLeft.setPower(1);
+        motorRight.setPower(1);
+//4
+        sleep(1000);
+
+        motorLeft.setPower(1);
+        motorRight.setPower(0);
+
+        sleep(1000);
+
+        motorLeft.setPower(1);
+        motorRight.setPower(1);
+
+        sleep(1000);
+
+        //Square Counterclockwise
+
+        motorLeft.setPower(0);
+        motorRight.setPower(0);
+
+        sleep(3000);
+//1
+        motorLeft.setPower(1);
+        motorRight.setPower(1);
+
+        sleep(1000);
+
+        motorLeft.setPower(0);
+        motorRight.setPower(1);
+
+        sleep(1000);
+
+        motorLeft.setPower(1);
+        motorRight.setPower(1);
+//2
+        sleep(1000);
+
+        motorLeft.setPower(0);
+        motorRight.setPower(1);
+        
+        sleep(1000);
+
+        motorLeft.setPower(1);
+        motorRight.setPower(1);
+//3
+        sleep(1000);
+
+        motorLeft.setPower(0);
+        motorRight.setPower(1);
+
+        sleep(1000);
+
+        motorLeft.setPower(1);
+        motorRight.setPower(1);
+
+        sleep(1000);
+
+
+//Boxy Figure-8 / infinity
+
+        motorLeft.setPower(0);
+        motorRight.setPower(0);
+
+        sleep(3000);
+
+        motorLeft.setPower(1);
+        motorRight.setPower(1);
+
+        sleep(1000);
+//1
+        motorLeft.setPower(0);
+        motorRight.setPower(1);
+
+        sleep(1000);
+
+        motorLeft.setPower(1);
+        motorRight.setPower(1);
+
+        sleep(1000);
+//2
+        motorLeft.setPower(0);
+        motorRight.setPower(1);
+
+        motorLeft.setPower(1);
+        motorRight.setPower(1);
+
+        sleep(1000);
+//3
+        motorLeft.setPower(0);
+        motorRight.setPower(1);
+
+        sleep(1000);
+
+        motorLeft.setPower(1);
+        motorRight.setPower(1);
+
+        sleep(1000);
+//4
+        motorLeft.setPower(0);
+        motorRight.setPower(1);
+
+        sleep(1000);
+
+        motorLeft.setPower(1);
+        motorRight.setPower(1);
+
+        sleep(1000);
+//5
+        motorLeft.setPower(1);
+        motorRight.setPower(0);
+
+        sleep(1000);
+
+        motorLeft.setPower(1);
+        motorRight.setPower(1);
+
+        sleep(1000);
+//6
+        motorLeft.setPower(1);
+        motorRight.setPower(0);
+
+        sleep(1000);
+
+        motorLeft.setPower(1);
+        motorRight.setPower(1);
+
+        sleep(1000);
+//6
+        motorLeft.setPower(1);
+        motorRight.setPower(0);
+
+        sleep(1000);
+
+        motorLeft.setPower(1);
+        motorRight.setPower(1);
+
+        sleep(1000);
+//7
+        motorLeft.setPower(1);
+        motorRight.setPower(0);
+
+        sleep(1000);
+
+        motorLeft.setPower(1);
+        motorRight.setPower(1);
+
+        sleep(1000);
+    }
+}
