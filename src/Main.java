@@ -6,6 +6,6 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        DemoAuto.driveByTime(10, 5)
+        DemoAuto.driveByTime(10, 5);
     }
 }
